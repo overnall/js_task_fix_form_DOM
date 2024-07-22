@@ -1,0 +1,2 @@
+function e(e){for(var t=0;t<e.length;t++)if(e[t]===e[t].toUpperCase()&&e[t]!==e[t].toLowerCase())return t;return!1}document.querySelectorAll("input").forEach(function(t){var r=t.getAttribute("name"),l=e(r);l=!1!==e(r)?r.slice(0,1).toUpperCase()+r.slice(1,l)+" "+r.slice(l):r.slice(0,1).toUpperCase()+r.slice(1),t.placeholder=l;var n=document.createElement("label");n.classList.add("field-label"),n.textContent=l,n.setAttribute("for",t.id),t.parentElement.insertBefore(n,t)});
+//# sourceMappingURL=index.ab9aee7c.js.map
